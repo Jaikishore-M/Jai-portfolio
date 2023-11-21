@@ -1,0 +1,253 @@
+body{
+    margin: 0px;
+}
+
+/* .item{
+    border: 5px solid black;
+} */
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.meimg{
+    width: 150px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0,0, 0,0.5);
+}
+
+.page{
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80% 40% 70%,30%;
+}
+
+.landing{
+    margin: 0px;
+    grid-column: span 2 ;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    color: whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+.landing > .text{
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.landing > .text > h1{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.landing > .text > h2{
+    font-family: 'IBM Plex Serif', serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.landing > .image{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 10vh;
+}
+
+.landing > .image > img{
+    height: 70%;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #713ABE, #5B0888, #9D76C1);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+.certifications{
+    padding: 20px;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #5B0888;
+    color: white;
+    border-radius: 20px;
+}
+
+.certifications > h3{
+    margin-bottom: 1.5rem;
+    flex-basis: 5vh;
+}
+
+.certifications > ul{
+    margin: 0%;
+    flex-basis: 30vh;
+    list-style-type:none;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0%;
+    line-height: 170%;
+}
+
+.aboutme{
+    margin: 0px;
+    padding: 20px;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #E5CFF7;
+    border-radius: 20px;
+}
+
+.aboutme h3{
+    margin: 0%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: center;
+
+}
+
+.aboutme > p{
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 0%;
+}
+
+.experience{
+    margin: 0%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.experience > p{
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 0%;
+}
+
+.btn{
+    margin-top:2rem ;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    background-color:713ABE;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0, 0,0.2);
+}
+
+.details{
+    grid-column: span 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.details > p{
+    padding: 20px;
+    padding-bottom: 0%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.details > ul{
+    padding: 20px;
+    padding-top: 0%;
+    font-family: 'Space Grotesk', sans-serif;
+    list-style: none;
+}
+
+@media (max-width : 770px){
+
+    .page{
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing{
+        display: flex;
+        width: 100%;
+        padding-right: 5vw;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .landing > .text{
+        display: flex;
+        margin: 0;
+        margin-top: 1rem;
+        margin-left: 5vw;
+        justify-content: center;
+        flex-direction: column;
+        font-size: smaller;
+        letter-spacing: .25rem;
+    }
+
+    .landing > .image{
+        height: 300px;
+        margin: 0%;
+    }
+
+    .landing > .image > img{
+        margin-top: 10vh;
+        height: 100%;
+    } 
+
+    .aboutme{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .certifications{
+        width: 100%;
+        margin: 0% ;
+    }
+
+    .experience{
+        width: 100%;
+        margin: 0%
+    }
+    .details{
+        width: 100%;
+        padding: 20px;
+    }
+    .details > p{
+        margin-left: 5vw;
+    }
+    .details > ul{
+        margin-left: 5vw;
+    }
+}
+
